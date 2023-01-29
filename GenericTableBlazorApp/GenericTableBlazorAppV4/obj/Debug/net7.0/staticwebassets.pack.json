@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GenericTableBlazorAppV4.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GenericTableBlazorAppV4.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\DAUNv2.0\\Desktop\\Store2\\AnotherTRY 4\\GenericTableBlazorApp\\GenericTableBlazorAppV4\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GenericTableBlazorAppV4.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GenericTableBlazorAppV4.props",
+      "PackagePath": "build\\GenericTableBlazorAppV4.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GenericTableBlazorAppV4.props",
+      "PackagePath": "buildMultiTargeting\\GenericTableBlazorAppV4.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GenericTableBlazorAppV4.props",
+      "PackagePath": "buildTransitive\\GenericTableBlazorAppV4.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

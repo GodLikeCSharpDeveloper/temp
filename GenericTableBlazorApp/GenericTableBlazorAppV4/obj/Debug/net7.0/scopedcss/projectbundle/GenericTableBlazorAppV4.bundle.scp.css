@@ -1,0 +1,160 @@
+/* _content/GenericTableBlazorAppV4/Shared/MainLayout.razor.rz.scp.css */
+.page[b-yqddv8k34u] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-yqddv8k34u] {
+    flex: 1;
+}
+
+.sidebar[b-yqddv8k34u] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-yqddv8k34u] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-yqddv8k34u]  a, .top-row .btn-link[b-yqddv8k34u] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-yqddv8k34u] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-yqddv8k34u] {
+        display: none;
+    }
+
+    .top-row.auth[b-yqddv8k34u] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-yqddv8k34u], .top-row .btn-link[b-yqddv8k34u] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-yqddv8k34u] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-yqddv8k34u] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-yqddv8k34u] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-yqddv8k34u], article[b-yqddv8k34u] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/GenericTableBlazorAppV4/Shared/NavMenu.razor.rz.scp.css */
+/* Add a black background color to the top navigation */
+.topnav1[b-73qjfrhvkk] {
+    background-color: black;
+    overflow: ;
+}
+.topnav2[b-73qjfrhvkk] {
+
+}
+.topnav3[b-73qjfrhvkk] {
+
+}
+/* Style the links inside the navigation bar */
+.topnav1 a[b-73qjfrhvkk] {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav1 a:hover[b-73qjfrhvkk] {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav1 a.active[b-73qjfrhvkk] {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav1-right[b-73qjfrhvkk] {
+    float: right;
+}
+.dropbtn[b-73qjfrhvkk] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown[b-73qjfrhvkk] {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content[b-73qjfrhvkk] {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* Links inside the dropdown */
+    .dropdown-content button[b-73qjfrhvkk] {
+        color: black;
+        padding: 12px 16px;
+        border: none;
+        text-decoration: none;
+        display: block;
+        min-width: 160px;
+        text-align: start;
+        z-index: 2;
+    }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover[b-73qjfrhvkk] {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content[b-73qjfrhvkk] {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn[b-73qjfrhvkk] {
+    background-color: #3e8e41;
+}

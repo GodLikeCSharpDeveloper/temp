@@ -1,0 +1,31 @@
+﻿@page "/YourTables"
+<div class="row">
+    <div class="input-group mb-3">
+        <div class="input-group-text">
+            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+        <button class="btn btn-success">Search</button>
+    </div>
+</div>
+<table class="table table-@NavMenu.Theme-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>55</td>
+    </tr>
+    </tbody>
+</table>
+@code {
+
+}

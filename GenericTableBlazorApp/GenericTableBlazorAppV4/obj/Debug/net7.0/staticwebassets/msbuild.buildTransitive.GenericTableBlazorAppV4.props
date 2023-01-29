@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GenericTableBlazorAppV4.props" />
+</Project>

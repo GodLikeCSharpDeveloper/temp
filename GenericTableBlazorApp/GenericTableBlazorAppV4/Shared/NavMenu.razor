@@ -1,0 +1,53 @@
+﻿@using GenericTableApp.Models
+
+<div class="row">
+    <div class="@Theme">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="YourTables">Table</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                @foreach (var item in ListOfThemes)
+                {
+                    <button @onclick="@(() => ChangeTheme(item.Value))">@item.Theme</button>
+                }
+            </div>
+        </div>
+        <div class="topnav1-right">
+            <a href="#search">Se22arch</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+@code {
+    protected override void OnInitialized()
+    {
+        Themes();
+    }
+
+    [Parameter]
+    public List<ThemeModel> ListOfThemes { get; set; } = new();
+
+    void Themes()
+    {
+        ListOfThemes.Add(new ThemeModel() { Theme = "dark", Value = "topnav1" });
+        ListOfThemes.Add(new ThemeModel() { Theme = "light", Value = "topnav2" });
+        ListOfThemes.Add(new ThemeModel() { Theme = "success", Value = "topnav3" });
+    }
+
+    public static string Theme { get; set; } = "topnav1";
+    public void ChangeTheme(string currentTheme)
+    {
+        Theme = currentTheme;
+    }
+
+
+
+}
