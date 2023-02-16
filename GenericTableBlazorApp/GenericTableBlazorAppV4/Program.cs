@@ -1,13 +1,19 @@
-
+using GenericTableBlazorAppV4.Repositories;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-
+builder.Services.AddScoped<ProductRepository>();
+builder.Services.AddScoped<OrderRepository>();
+builder.Services.AddScoped<CustomerRepository>();
+builder.Services.AddDbContext<StoreContext>(option =>
+    option.UseSqlite(builder.Configuration.GetConnectionString("myconn")));
 
 var app = builder.Build();
 

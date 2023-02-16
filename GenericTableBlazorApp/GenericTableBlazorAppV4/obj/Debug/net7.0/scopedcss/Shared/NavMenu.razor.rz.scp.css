@@ -1,18 +1,70 @@
 /* Add a black background color to the top navigation */
-.topnav1[b-73qjfrhvkk] {
+.colorBlack[b-73qjfrhvkk] {
     background-color: black;
-    overflow: ;
+   
 }
-.topnav2[b-73qjfrhvkk] {
-
+.colorWhite[b-73qjfrhvkk] {
+    background-color: #DCDCDC;
 }
-.topnav3[b-73qjfrhvkk] {
-
+.colorGreen[b-73qjfrhvkk] {
+    background-color: #2F4F4F;
 }
 /* Style the links inside the navigation bar */
-.topnav1 a[b-73qjfrhvkk] {
+.colorBlack a[b-73qjfrhvkk] {
     float: left;
     color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+/* Change the color of links on hover */
+.colorBlack a:hover[b-73qjfrhvkk] {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+    .colorBlack a.active[b-73qjfrhvkk] {
+        background-color: black;
+        color: whitesmoke;
+    }
+
+/* Right-aligned section inside the top navigation */
+.colorBlack-right[b-73qjfrhvkk] {
+    float: right;
+}
+.colorWhite a[b-73qjfrhvkk] {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+/* Change the color of links on hover */
+    .colorWhite a:hover[b-73qjfrhvkk] {
+        background-color: #FFFAF0;
+        color: black;
+    }
+
+/* Add a color to the active/current link */
+    .colorWhite a.active[b-73qjfrhvkk] {
+        background-color: #FFFAF0;
+        color: black;
+    }
+
+/* Right-aligned section inside the top navigation */
+.colorWhite-right[b-73qjfrhvkk] {
+    float: right;
+}
+.colorGreen a[b-73qjfrhvkk] {
+    float: left;
+    color: white;
     text-align: center;
     padding: 15px 16px;
     text-decoration: none;
@@ -20,24 +72,25 @@
 }
 
 /* Change the color of links on hover */
-.topnav1 a:hover[b-73qjfrhvkk] {
-    background-color: #ddd;
-    color: black;
-}
+    .colorGreen a:hover[b-73qjfrhvkk] {
+        background-color: #8FBC8F;
+        color: white;
+    }
 
 /* Add a color to the active/current link */
-.topnav1 a.active[b-73qjfrhvkk] {
-    background-color: #04AA6D;
-    color: white;
-}
+    .colorGreen a.active[b-73qjfrhvkk] {
+        background-color: #8FBC8F;
+        color: white;
+    }
 
 /* Right-aligned section inside the top navigation */
-.topnav1-right[b-73qjfrhvkk] {
+.colorGreen-right[b-73qjfrhvkk] {
     float: right;
 }
+
 .dropbtn[b-73qjfrhvkk] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #DCDCDC;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -84,5 +137,6 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn[b-73qjfrhvkk] {
-    background-color: #3e8e41;
+    background-color: #FFFAF0;
 }
+

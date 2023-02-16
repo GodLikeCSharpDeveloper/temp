@@ -14,7 +14,7 @@
                 }
             </div>
         </div>
-        <div class="topnav1-right">
+        <div class="@Theme-right">
             <a href="#search">Se22arch</a>
             <a href="#about">About</a>
         </div>
@@ -34,15 +34,14 @@
 
     [Parameter]
     public List<ThemeModel> ListOfThemes { get; set; } = new();
+    public static string Theme { get; set; } = "colorBlack";
 
     void Themes()
     {
-        ListOfThemes.Add(new ThemeModel() { Theme = "dark", Value = "topnav1" });
-        ListOfThemes.Add(new ThemeModel() { Theme = "light", Value = "topnav2" });
-        ListOfThemes.Add(new ThemeModel() { Theme = "success", Value = "topnav3" });
+        ListOfThemes.Add(new ThemeModel() { Theme = "dark", Value = "colorBlack" });
+        ListOfThemes.Add(new ThemeModel() { Theme = "light", Value = "colorWhite" });
+        ListOfThemes.Add(new ThemeModel() { Theme = "green", Value = "colorGreen" });
     }
-
-    public static string Theme { get; set; } = "topnav1";
     public void ChangeTheme(string currentTheme)
     {
         Theme = currentTheme;
