@@ -15,7 +15,7 @@ namespace GenericTableBlazorAppV4.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.2");
+            modelBuilder.HasAnnotation("ProductVersion", "7.0.3");
 
             modelBuilder.Entity("GenericTableBlazorAppV4.Models.CustomerModel", b =>
                 {
@@ -84,9 +84,15 @@ namespace GenericTableBlazorAppV4.Migrations
                     b.Property<bool>("IsCanceled")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("ProductModelId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerModelId");
+                    b.HasIndex("CustomerModelId")
+                        .IsUnique();
+
+                    b.HasIndex("ProductModelId");
 
                     b.ToTable("Order");
                 });
@@ -131,48 +137,28 @@ namespace GenericTableBlazorAppV4.Migrations
                     b.ToTable("Product");
                 });
 
-            modelBuilder.Entity("OrderModelProductModel", b =>
-                {
-                    b.Property<int>("OrderModelsId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ProductModelsId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("OrderModelsId", "ProductModelsId");
-
-                    b.HasIndex("ProductModelsId");
-
-                    b.ToTable("OrderModelProductModel");
-                });
-
             modelBuilder.Entity("GenericTableBlazorAppV4.Models.OrderModel", b =>
                 {
                     b.HasOne("GenericTableBlazorAppV4.Models.CustomerModel", "CustomerModel")
-                        .WithMany("OrderModels")
-                        .HasForeignKey("CustomerModelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CustomerModel");
-                });
-
-            modelBuilder.Entity("OrderModelProductModel", b =>
-                {
-                    b.HasOne("GenericTableBlazorAppV4.Models.OrderModel", null)
-                        .WithMany()
-                        .HasForeignKey("OrderModelsId")
+                        .WithOne("OrderModel")
+                        .HasForeignKey("GenericTableBlazorAppV4.Models.OrderModel", "CustomerModelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("GenericTableBlazorAppV4.Models.ProductModel", null)
-                        .WithMany()
-                        .HasForeignKey("ProductModelsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("OrderModels")
+                        .HasForeignKey("ProductModelId");
+
+                    b.Navigation("CustomerModel");
                 });
 
             modelBuilder.Entity("GenericTableBlazorAppV4.Models.CustomerModel", b =>
+                {
+                    b.Navigation("OrderModel")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GenericTableBlazorAppV4.Models.ProductModel", b =>
                 {
                     b.Navigation("OrderModels");
                 });

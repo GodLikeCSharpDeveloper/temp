@@ -1,8 +1,9 @@
-﻿namespace GenericTableBlazorAppV4.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace GenericTableBlazorAppV4.Models
 {
     public class CustomerModel
     {
-        
         public int Id { get; set; }
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
@@ -14,6 +15,6 @@
         public int CashbackCount { get; set; }
         public string Login { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
-        public List<OrderModel> OrderModels { get; set; } = new();
+        public OrderModel OrderModel { get; set; } = new();
     }
 }
